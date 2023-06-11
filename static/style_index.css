@@ -1,0 +1,169 @@
+body::after {
+  content: "";
+  background-image: url('https://mizoramsacs.org/wp-content/uploads/2019/06/background.jpg');
+  background-size:cover;
+  background-position: center;
+  filter: blur(60px);
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+h1 {
+  text-align: center;
+  font-size: 46px;
+  color: rgb(53, 53, 53);
+  padding-top: 60px;
+}
+
+h2 {
+  text-align: left;
+  font-size: 36px;
+  padding-left: 35px;
+}
+
+p {
+  margin-left: 40px;
+  margin-right: 40px;
+  font-size: 22px;
+}
+
+#welcome2 {
+  text-align: center;
+  color:rgb(46, 46, 46);
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 26px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.card, .card2 {
+  flex: 0 1 calc(50% - 20px);
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0px 10px 20px rgba(126, 126, 126, 0.05), 0px 6px 6px rgba(122, 122, 122, 0.05);
+  transition: all 0.1s ease-in-out;
+}
+
+.card2 {
+  border-radius: 15px;
+  margin: 40px;
+  box-shadow: 0px 10px 20px rgba(126, 126, 126, 0.1), 0px 6px 6px rgba(122, 122, 122, 0.1);
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+      flex: 0 1 calc(100% - 20px);  /* Em telas menores, cada card ocupará toda a linha */
+  }
+}
+
+.card:hover {
+  transform: scale(0.95); /* Aumenta o tamanho do card em 5% */
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1); /* Aumenta a sombra para dar uma sensação de elevação */
+  cursor: pointer;
+}
+
+.btn-primary {
+  width: 120px;
+  margin: 30px;
+}
+
+.card-title {
+  font-size: 30px;
+  margin: 20px;
+}
+
+.card-text {
+  font-size: 20px;
+  margin: 20px;
+  padding-bottom: 20px;
+}
+
+#cards {
+  display:flex;
+  margin: 25px;
+}
+
+#logoIndex {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  width: 100px;
+  height: auto;
+}
+
+#certificado {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  width: 80%;
+  height: auto;
+}
+
+.whatsapp_float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #000000;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 57px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  transition: all 0.1s ease-in-out;
+}
+
+.whatsapp_float:hover {
+  transform: scale(1.1);
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 0;
+  background-color: transparent;
+  border-top: 1px solid #919191;
+}
+
+.text-footer {
+  margin-bottom: 0;
+  color: #616161;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+.footer p {
+  font-size: 16px;
+  color: #808080;
+}
+
+.footer h5 {
+  font-size: 20px;
+  padding-left: 38px;
+  color: #616161;
+}
+
+.text-footer:hover {
+  color: #007bff;
+}

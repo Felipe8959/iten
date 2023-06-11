@@ -1,0 +1,32 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar, .bg-body-tertiary {
+  background-color: transparent !important;
+  transition: background-color 0.5s ease;
+}
+
+.nav-link {
+  transition: color 0.5s ease;
+}
+
+.bg-body-tertiary-opaque {
+  background-color: rgba(27, 27, 27, 0.98) !important;
+}
+
+.bg-body-tertiary-opaque .nav-link {
+  color: white !important;
+}
+
+.navbar-brand {
+  margin-left: 18px;
+  color: rgb(46, 152, 212);
+}
+
+#navbarNav {
+  padding-left: 18px;
+}

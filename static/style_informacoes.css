@@ -1,0 +1,67 @@
+.whatsapp_float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #000000;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 57px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    transition: all 0.1s ease-in-out;
+  }
+  
+  .whatsapp_float:hover {
+    transform: scale(1.1);
+  }
+
+  .footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+    background-color: transparent;
+    border-top: 1px solid #919191;
+  }
+  
+  .text-footer {
+    margin-bottom: 0;
+    color: #616161;
+    text-decoration: none;
+    font-size: 10px;
+  }
+  
+  .footer p {
+    font-size: 16px;
+    padding-left: 38px;
+    color: #808080;
+  }
+  
+  .footer h5 {
+    font-size: 20px;
+    padding-left: 38px;
+    color: #616161;
+  }
+  
+  .text-footer:hover {
+    color: #007bff;
+  }
+
+  h1 {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
+
+  h2 {
+    padding-top: 50px;
+  }
+
+  h4 {
+    padding-bottom: 55px;
+    color: #007bff;
+  }
