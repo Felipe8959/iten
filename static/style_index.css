@@ -78,7 +78,7 @@ p {
 }
 
 .btn-primary {
-  width: 120px;
+  width: auto;
   margin: 30px;
 }
 
@@ -166,4 +166,19 @@ p {
 
 .text-footer:hover {
   color: #007bff;
+}
+
+.accordion-button {
+  font-size: 30px;
+}
+
+#servicos span {
+  color: #007bff;
+  font-size: 22px;
+}
+
+#servicos span:hover {
+  color: #84bfff;
+  font-size: 22px;
+  cursor: pointer;
 }
