@@ -172,12 +172,12 @@ p {
   font-size: 30px;
 }
 
-#servicos span {
+#servicos span, #ensaios span {
   color: #007bff;
   font-size: 22px;
 }
 
-#servicos span:hover {
+#servicos span:hover, #ensaios span:hover{
   color: #84bfff;
   font-size: 22px;
   cursor: pointer;
