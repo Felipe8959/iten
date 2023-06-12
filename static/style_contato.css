@@ -88,3 +88,36 @@ body::after {
   iframe {
     padding-bottom: 50px;
   }
+
+  @media screen and (max-width: 800px) {  
+    .card-container h5{
+      font-size: 5vw;
+    }
+  
+    .card-container p{
+      font-size: 3vw;
+    }
+  
+  .navbar-collapse.collapse.show .nav-link {
+    color: #fff;
+  }
+  
+  .navbar, .bg-body-tertiary {
+    background-color: rgba(27, 27, 27, 0.98) !important;
+  }
+  
+  .navbar-toggler:focus, .navbar-toggler:active {
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
+  
+  .navbar-toggler {
+    border: none;
+  }
+  
+  .navbar-toggler-icon {
+    filter: invert(100%);
+  }
+  
+  }

@@ -69,6 +69,53 @@ p {
   .card {
       flex: 0 1 calc(100% - 20px);  /* Em telas menores, cada card ocupará toda a linha */
   }
+
+  h1{
+    font-size: 5vw;
+  }
+
+  h2{
+    font-size: 4vw;
+  }
+
+  p {
+    font-size: 3vw;
+  }
+
+  #welcome2{
+    font-size: 3vw;
+  }
+
+  .card-container h5{
+    font-size: 5vw;
+  }
+
+  .card-container p{
+    font-size: 3vw;
+  }
+
+.navbar-collapse.collapse.show .nav-link {
+  color: #fff;
+}
+
+.navbar, .bg-body-tertiary {
+  background-color: rgba(27, 27, 27, 0.98) !important;
+}
+
+.navbar-toggler:focus, .navbar-toggler:active {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  filter: invert(100%);
+}
+
 }
 
 .card:hover {
@@ -182,3 +229,4 @@ p {
   font-size: 22px;
   cursor: pointer;
 }
+

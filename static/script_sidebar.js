@@ -7,4 +7,4 @@ window.onscroll = function() {
         navbar.classList.remove('bg-body-tertiary-opaque');
         navbar.classList.add('bg-body-tertiary');
     }
-};
+}
