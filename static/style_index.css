@@ -23,11 +23,9 @@ h1 {
 h2 {
   text-align: left;
   font-size: 36px;
-  padding-left: 35px;
 }
 
 p {
-  margin-left: 40px;
   margin-right: 40px;
   font-size: 22px;
 }
@@ -45,7 +43,6 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 20px;
 }
 
 .card, .card2 {
@@ -71,27 +68,31 @@ p {
   }
 
   h1{
-    font-size: 5vw;
+    font-size: 6vw;
   }
 
   h2{
-    font-size: 4vw;
-  }
-
-  p {
-    font-size: 3vw;
-  }
-
-  #welcome2{
-    font-size: 3vw;
-  }
-
-  .card-container h5{
     font-size: 5vw;
   }
 
+  p {
+    font-size: 4vw;
+  }
+
+  span{
+    font-size: 4vw;
+  }
+
+  #welcome2{
+    font-size: 4vw;
+  }
+
+  .card-container h5{
+    font-size: 6vw;
+  }
+
   .card-container p{
-    font-size: 3vw;
+    font-size: 4vw;
   }
 
 .navbar-collapse.collapse.show .nav-link {
@@ -131,18 +132,14 @@ p {
 
 .card-title {
   font-size: 30px;
-  margin: 20px;
 }
 
 .card-text {
   font-size: 20px;
-  margin: 20px;
-  padding-bottom: 20px;
 }
 
 #cards {
   display:flex;
-  margin: 25px;
 }
 
 #logoIndex {
@@ -202,6 +199,7 @@ p {
 
 .footer p {
   font-size: 16px;
+  margin-left: 40px;
   color: #808080;
 }
 

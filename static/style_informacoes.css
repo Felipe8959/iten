@@ -103,27 +103,31 @@ body::after {
     }
   
     h1{
-      font-size: 5vw;
+      font-size: 6vw;
     }
   
     h2{
-      font-size: 4vw;
-    }
-  
-    p {
-      font-size: 3vw;
-    }
-  
-    #welcome2{
-      font-size: 3vw;
-    }
-  
-    .card-container h5{
       font-size: 5vw;
     }
   
+    p {
+      font-size: 4vw;
+    }
+  
+    span{
+      font-size: 4vw;
+    }
+  
+    #welcome2{
+      font-size: 4vw;
+    }
+  
+    .card-container h5{
+      font-size: 6vw;
+    }
+  
     .card-container p{
-      font-size: 3vw;
+      font-size: 4vw;
     }
   
   .navbar-collapse.collapse.show .nav-link {
