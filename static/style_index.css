@@ -26,7 +26,6 @@ h2 {
 }
 
 p {
-  margin-right: 40px;
   font-size: 22px;
 }
 
@@ -34,8 +33,6 @@ p {
   text-align: center;
   color:rgb(46, 46, 46);
   margin-top: 20px;
-  margin-left: 50px;
-  margin-right: 50px;
   font-size: 26px;
 }
 
@@ -76,10 +73,6 @@ p {
   }
 
   p {
-    font-size: 4vw;
-  }
-
-  span{
     font-size: 4vw;
   }
 
