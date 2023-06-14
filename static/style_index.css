@@ -148,19 +148,24 @@ p {
   }
 
   h1{
-    font-size: 6vw;
+    font-size: 4vw;
   }
 
   h2{
-    font-size: 5vw;
+    font-size: 4vw;
   }
 
   p {
     font-size: 4vw;
   }
 
-  #welcome2{
-    font-size: 4vw;
+  .logoIndex {
+    width: 80px;
+  }
+
+  #welcome2 {
+    padding-right: 5%;
+    font-size: 20px;
   }
 
   .card-container h5{
