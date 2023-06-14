@@ -148,7 +148,7 @@ p {
   }
 
   h1{
-    font-size: 30px;
+    font-size: 34px;
   }
 
   h2{
@@ -161,11 +161,12 @@ p {
 
   .logoIndex {
     width: 100px;
+    padding-top: 120px;
   }
 
   #welcome2 {
-    padding-right: 7%;
-    font-size: 22px;
+    padding-right: 2%;
+    font-size: 24px;
   }
 
   .card-container h5{
