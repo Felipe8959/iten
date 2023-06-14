@@ -1,10 +1,10 @@
 body::after {
   content: "";
-  background-image: url('https://mizoramsacs.org/wp-content/uploads/2019/06/background.jpg');
-  background-size:cover;
+  background-image: url('https://cdn.pixabay.com/photo/2019/12/29/02/33/snow-4726119_1280.jpg');
+  background-size:50%;
   background-position: center;
   filter: blur(60px);
-  opacity: 0.2;
+  opacity: 0.4;
   top: 0;
   left: 0;
   bottom: 0;
@@ -13,8 +13,35 @@ body::after {
   z-index: -1;   
 }
 
+.logoIndex {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  width: 130px;
+  height: auto;
+  animation: flutuacao 4s infinite;
+}
+
+@keyframes flutuacao {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+.conteudo {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.intro {
+  padding-left: 1%;
+  padding-top: 3%;
+  padding-bottom: 10%;
+}
+
 h1 {
-  text-align: center;
+  text-align: left;
   font-size: 46px;
   color: rgb(53, 53, 53);
   padding-top: 60px;
@@ -22,7 +49,8 @@ h1 {
 
 h2 {
   text-align: left;
-  font-size: 36px;
+  font-size: 32px;
+  padding-top: 2%;
 }
 
 p {
@@ -30,10 +58,11 @@ p {
 }
 
 #welcome2 {
-  text-align: center;
+  text-align: left;
   color:rgb(46, 46, 46);
   margin-top: 20px;
-  font-size: 26px;
+  padding-right: 20%;
+  font-size: 34px;
 }
 
 .card-container {
@@ -58,6 +87,60 @@ p {
   margin: 40px;
   box-shadow: 0px 10px 20px rgba(126, 126, 126, 0.1), 0px 6px 6px rgba(122, 122, 122, 0.1);
 }
+
+.card:hover {
+  transform: scale(0.95);
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.card-title {
+  font-size: 30px;
+}
+
+.card-text {
+  font-size: 20px;
+}
+
+#cards {
+  display:flex;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 10%;
+  background-color: transparent;
+  border-top: 1px solid #919191;
+}
+
+.text-footer {
+  margin-bottom: 0;
+  color: #616161;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+.footer p {
+  font-size: 16px;
+  color: #808080;
+}
+
+.footer h5 {
+  font-size: 20px;
+  color: #616161;
+}
+
+.text-footer:hover {
+  color: #007bff;
+}
+
+.accordion-button {
+  font-size: 30px;
+}
+
 
 @media screen and (max-width: 800px) {
   .card {
@@ -92,6 +175,10 @@ p {
   color: #fff;
 }
 
+.navbar-collapse.collapse.show .nav-link:hover {
+  color: #6cb3ff;
+}
+
 .navbar, .bg-body-tertiary {
   background-color: rgba(27, 27, 27, 0.98) !important;
 }
@@ -111,113 +198,3 @@ p {
 }
 
 }
-
-.card:hover {
-  transform: scale(0.95); /* Aumenta o tamanho do card em 5% */
-  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1); /* Aumenta a sombra para dar uma sensação de elevação */
-  cursor: pointer;
-}
-
-.btn-primary {
-  width: auto;
-  margin: 30px;
-}
-
-.card-title {
-  font-size: 30px;
-}
-
-.card-text {
-  font-size: 20px;
-}
-
-#cards {
-  display:flex;
-}
-
-#logoIndex {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px;
-  width: 100px;
-  height: auto;
-}
-
-#certificado {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 20px;
-  width: 80%;
-  height: auto;
-}
-
-.whatsapp_float {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 40px;
-  right: 40px;
-  background-color: #000000;
-  color: #FFF;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 30px;
-  line-height: 57px;
-  box-shadow: 2px 2px 3px #999;
-  z-index: 100;
-  transition: all 0.1s ease-in-out;
-}
-
-.whatsapp_float:hover {
-  transform: scale(1.1);
-}
-
-.footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  padding: 20px 0;
-  background-color: transparent;
-  border-top: 1px solid #919191;
-}
-
-.text-footer {
-  margin-bottom: 0;
-  color: #616161;
-  text-decoration: none;
-  font-size: 10px;
-}
-
-.footer p {
-  font-size: 16px;
-  margin-left: 40px;
-  color: #808080;
-}
-
-.footer h5 {
-  font-size: 20px;
-  padding-left: 38px;
-  color: #616161;
-}
-
-.text-footer:hover {
-  color: #007bff;
-}
-
-.accordion-button {
-  font-size: 30px;
-}
-
-#servicos span, #ensaios span {
-  color: #007bff;
-  font-size: 22px;
-}
-
-#servicos span:hover, #ensaios span:hover{
-  color: #84bfff;
-  font-size: 22px;
-  cursor: pointer;
-}
-

@@ -5,13 +5,58 @@
   z-index: 100;
 }
 
+/* Opção ITEN na sidebar */
+#home{
+  text-decoration: none;
+  padding-left: 20px;
+  font-size: 22px;
+  transition: color 0.3s ease;
+}
+
+#home:hover{
+  color: #6cb3ff;
+}
+
+.navbar-collapse.collapse.show .nav-link {
+  color: #1b1b1b;
+}
+
+.nav-link:hover {
+  color: #6cb3ff;
+}
+
+/* Sidebar */
+#sidebar .form-control {
+  box-shadow: none;
+  border-color: transparent;
+  border-radius: 8px;
+  background-color:rgb(255, 255, 255);
+}
+
+#sidebar .btn-outline-success {
+  border-color: rgb(46, 152, 212);
+  background-color: #ffffff;
+  color: rgb(46, 152, 212);
+  border-radius: 8px;
+}
+
+#sidebar .btn-outline-success:hover {
+  background-color: rgb(46, 152, 212);
+  color: white;
+}
+
+/* Barra de pesquisa */
+.d-flex {
+  padding-left: 38%;
+}
+
 .navbar, .bg-body-tertiary {
   background-color: transparent !important;
   transition: background-color 0.5s ease;
 }
 
 .nav-link {
-  transition: color 0.5s ease;
+  transition: color 0.3s ease;
 }
 
 .bg-body-tertiary-opaque {
@@ -22,6 +67,10 @@
   color: white !important;
 }
 
+.bg-body-tertiary-opaque .nav-link:hover {
+  color: rgb(46, 152, 212) !important;
+}
+
 .navbar-brand {
   margin-left: 18px;
   color: rgb(46, 152, 212);
@@ -29,4 +78,53 @@
 
 #navbarNav {
   padding-left: 18px;
+}
+
+.whatsapp_float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #000000;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 57px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  transition: all 0.1s ease-in-out;
+}
+
+.whatsapp_float:hover {
+  transform: scale(1.1);
+  color: #25d366;
+}
+
+
+/* Formulário para mostrar as certificações*/
+.modal-lg {
+  max-width: 80%;
+}
+
+.carousel-item img {
+  object-fit: contain; /* faz com que a imagem se ajuste dentro do seu container, mantendo sua proporção */
+  height: 490px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-color: rgba(0, 0, 0, 0.5);  /* Seta semi-transparente */
+    border-radius:80px;
+    width: 40px; /* Largura da seta */
+    height: 40px; /* Altura da seta */
+}
+
+.carousel-control-prev {
+    justify-content: start !important; /* Alinha a seta para a esquerda */
+}
+
+.carousel-control-next {
+    justify-content: end !important; /* Alinha a seta para a direita */
 }
