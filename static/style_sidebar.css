@@ -129,3 +129,34 @@
 .carousel-control-next {
     justify-content: end !important; /* Alinha a seta para a direita */
 }
+
+
+@media screen and (max-width: 800px) {
+
+.navbar-collapse.collapse.show .nav-link {
+  color: #fff;
+}
+
+.navbar-collapse.collapse.show .nav-link:hover {
+  color: #6cb3ff;
+}
+
+.navbar, .bg-body-tertiary {
+  background-color: rgba(39, 39, 39, 0.93) !important;
+}
+
+.navbar-toggler:focus, .navbar-toggler:active {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  filter: invert(100%);
+}
+
+}
