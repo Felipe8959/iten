@@ -8,10 +8,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="/static/style_sidebar.css">
     <link rel="stylesheet" href="/static/style_index.css">
+    <link rel="stylesheet" href="/static/style_background.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
+<div class="video-background">
+    <video id="background-video" playsinline autoplay muted loop>
+        <source id="video-source" src="static/video.mp4" type="video/mp4">
+    </video>
 <!-- Barra superior -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="sidebar">
         <div class="container-fluid" id="container-fluid">
@@ -38,18 +43,18 @@
                 </li>
             </ul>
             <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="O que você procura?" aria-label="Search" id="search">
+                <input class="form-control me-2 transparent-input" type="search" placeholder="O que você procura?" aria-label="Search" id="search">
                 <button class="btn btn-outline-success" type="submit">Pesquisar</button>
-            </form>
+            </form>            
             </div>
         </div>
     </nav>
+<div class="intro">
+    <h1 id="welcome1"><strong>Instituto Tecnológico de Ensaios</strong></h1>
+    <p id="welcome2">Somos um laboratório nacional de ensaios independentes que executa uma ampla gama de serviços para os seus produtos.</p>
+</div>
+</div>
     <div class="conteudo">
-        <div class="intro">
-            <img src="/static/logo_azul.png" class="logoIndex">
-            <h1 id="welcome1"><strong>Instituto Tecnológico de Ensaios</strong></h1>
-            <p id="welcome2">Somos um laboratório nacional de ensaios independentes que executa uma ampla gama de serviços para os seus produtos.</p>
-        </div>
             <!-- Cards -->
         <div class="card-container">
             <!-- Ensaio elétrico -->
@@ -83,8 +88,7 @@
                 <p class="card-text">Existem alguns tipos de ensaios que são interligados e pertencem a mais de uma categoria. Por isso, é preciso conhecer os produtos e serviços que oferecemos para identificar qual é o ideal para a sua necessidade. Confira a seguir a lista com os procedimentos e norma de cada um deles para entender melhor.</p>
             </div>
         </div>
-
-
+        
     <!-- Empresa -->
         <h1>Empresa</h1>
         <h2>Conheça nossa empresa</h2>
@@ -115,6 +119,17 @@
         <p>Os ensaios acústicos são fundamentais para o mundo moderno. Com o grande número de atividades simultâneas que ocorrem diariamente, o volume do som nas cidades aumentou radicalmente nos últimos tempos. Para reduzir esse fator, é necessário realizar ensaios acústicos sempre que um local for construído ou um equipamento for fabricado.</p>
         <p><span>Saiba mais</span></p>
 
+        <!-- Rodapé -->
+        <footer class="footer">
+            <h5>ITEN - Instituto Técnologico De Ensaios Ltda</h5>
+            <p>Av. Victor Civita, 2064 - Santa Maria - Osasco/SP - CEP: 06149-225</p>
+            <p>comercial@itensp.com.br</p>
+            <p>comercial1@itensp.com.br</p>
+            <p>(11) 3606-7373</p>
+            <p>(11) 3431-4145</p>
+            <p class="text-footer">Copyright &copy; ITEN. (Lei 9610 de 19/02/1998).</p>
+        </footer>
+    </div>
         <!-- Modal - Certificados -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
@@ -142,24 +157,14 @@
                     <span class="visually-hidden">Próximo</span>
                     </button>
                 </div>
-                </div>
             </div>
             </div>
         </div>
-        <!-- Rodapé -->
-        <footer class="footer">
-            <h5>ITEN - Instituto Técnologico De Ensaios Ltda</h5>
-            <p>Av. Victor Civita, 2064 - Santa Maria - Osasco/SP - CEP: 06149-225</p>
-            <p>comercial@itensp.com.br</p>
-            <p>comercial1@itensp.com.br</p>
-            <p>(11) 3606-7373</p>
-            <p>(11) 3431-4145</p>
-            <p class="text-footer">Copyright &copy; ITEN. (Lei 9610 de 19/02/1998).</p>
-        </footer>
     </div>
     <a href="https://wa.me/11945449450" class="whatsapp_float" target="_blank">
         <i class="fa fa-whatsapp" aria-hidden="true"></i>
-    </a>    
+    </a>
+    <script src="/static/script_background.js"></script>
     <script src="/static/script_sidebar.js"></script>
     <script src="/static/script_index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>

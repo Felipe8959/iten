@@ -29,7 +29,7 @@
 /* Sidebar */
 #sidebar .form-control {
   box-shadow: none;
-  border-color: transparent;
+  border-color: rgb(46, 152, 212);
   border-radius: 8px;
   background-color:rgb(255, 255, 255);
 }
@@ -48,7 +48,9 @@
 
 /* Barra de pesquisa */
 .d-flex {
-  padding-left: 38%;
+  position: absolute;
+  right: 0;
+  padding-right: 30px;
 }
 
 .navbar, .bg-body-tertiary {
@@ -93,7 +95,7 @@
   text-align: center;
   font-size: 30px;
   line-height: 58px;
-  box-shadow: 2px 2px 3px #999;
+  box-shadow: 2px 2px 3px #000000;
   z-index: 100;
   transition: all 0.1s ease-in-out;
 }
@@ -110,7 +112,7 @@
 }
 
 .carousel-item img {
-  object-fit: contain; /* faz com que a imagem se ajuste dentro do seu container, mantendo sua proporção */
+  object-fit: contain;
   height: 490px;
 }
 
@@ -123,11 +125,11 @@
 }
 
 .carousel-control-prev {
-    justify-content: start !important; /* Alinha a seta para a esquerda */
+    justify-content: start !important;
 }
 
 .carousel-control-next {
-    justify-content: end !important; /* Alinha a seta para a direita */
+    justify-content: end !important;
 }
 
 
