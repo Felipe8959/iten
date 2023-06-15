@@ -46,3 +46,16 @@ function typeWriter3() {
 window.onload = function() {
     typeWriter1();
 };
+
+
+// Carregar página após o video ser carregado
+var video = document.getElementById('background-video');
+
+video.addEventListener('canplaythrough', function() {
+    document.body.style.display = 'block';
+}, false);
+
+// Após 10 segundos, mostre a página mesmo que o vídeo não esteja totalmente carregado
+setTimeout(function() {
+    document.body.style.display = 'block';
+}, 10000);

@@ -107,13 +107,9 @@
 
 
 /* Formulário para mostrar as certificações*/
-.modal-lg {
-  max-width: 80%;
-}
-
 .carousel-item img {
   object-fit: contain;
-  height: 490px;
+  height: 500px;
 }
 
 .carousel-control-next-icon,
@@ -161,4 +157,11 @@
   filter: invert(100%);
 }
 
+.d-flex {
+  position: relative;
+}
+
+.whatsapp_float {
+  line-height: 64px;
+}
 }
