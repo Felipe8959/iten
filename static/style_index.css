@@ -193,6 +193,11 @@ p {
     padding-top: 50px;
   }
 
+  #welcome1 {
+    font-size: 30px;
+    padding-top: 70%;
+  }
+
   #welcome2 {
     padding-right: 2%;
     font-size: 24px;
@@ -204,6 +209,14 @@ p {
 
   .card-container p{
     font-size: 4vw;
+  }
+
+  .footer h5{
+    font-size: 16px;
+  }
+  
+  .footer p{
+    font-size: 14px;
   }
 
 }
