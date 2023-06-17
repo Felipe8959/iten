@@ -59,3 +59,30 @@ video.addEventListener('canplaythrough', function() {
 setTimeout(function() {
     document.body.style.display = 'block';
 }, 10000);
+
+
+// Carregar video para desktop ou para mobile
+window.onload = function() {
+    var videoSource = document.getElementById('video-source');
+    
+    if (window.innerWidth <= 600) {
+        videoSource.setAttribute('src', 'static/video_mobile.mp4');
+    } else {
+        videoSource.setAttribute('src', 'static/video.mp4');
+    }
+
+    // Carrega o vídeo após alterar a fonte
+    document.getElementById('background-video').load();
+};
+
+
+document.querySelector('.navbar-toggler').addEventListener('click', function () {
+    var navbar = document.querySelector('#sidebar');
+    navbar.classList.toggle('nav-solid');
+});
+
+
+
+
+
+
