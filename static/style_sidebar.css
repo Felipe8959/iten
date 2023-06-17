@@ -42,12 +42,12 @@
   color: white;
 }
 
-/* Barra de pesquisa */
-.d-flex {
-  position: absolute;
-  right: 0;
-  padding-right: 30px;
-}
+/*Barra de pesquisa*/
+  .d-flex {
+    position: absolute;
+    right: 0;
+    padding-right: 30px;
+  }
 
 .navbar, .bg-body-tertiary {
   background-color: transparent !important;
@@ -92,7 +92,7 @@
   font-size: 30px;
   line-height: 59px;
   box-shadow: 2px 2px 3px #202020;
-  z-index: 100;
+  z-index: 2;
   transition: all 0.1s ease-in-out;
 }
 
@@ -110,10 +110,10 @@
 
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
-    background-color: rgba(0, 0, 0, 0.5);  /* Seta semi-transparente */
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius:80px;
-    width: 40px; /* Largura da seta */
-    height: 40px; /* Altura da seta */
+    width: 40px;
+    height: 40px;
 }
 
 .carousel-control-prev {
@@ -176,7 +176,7 @@
 .navbar-toggler-icon div {
   position: relative;
   height: 2px;
-  background: #000;  /* Ajuste a cor conforme necessário */
+  background: #000;
   margin: 4px 0;
   transition: all 0.3s;
 }
@@ -199,7 +199,6 @@
 .nav-solid {
   background-color: rgba(27, 27, 27, 0.98) !important; /* Altere para a cor desejada */
 }
-
 
 .whatsapp_float:hover {
   transform: scale(1);

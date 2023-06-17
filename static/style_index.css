@@ -17,6 +17,7 @@ body::after {
   color: white;
 }
 
+/*Barra de pesquisa*/
 .transparent-input {
   background-color: transparent !important;
   border-color: #fff !important;
@@ -32,6 +33,7 @@ body::after {
   box-shadow: none !important;
 }
 
+/*Botão da barra de pesquisa*/
 #sidebar .btn-outline-success:hover {
   background-color: rgb(46, 152, 212);
   border-color: rgb(46, 152, 212);
@@ -44,7 +46,6 @@ body::after {
   color: rgb(255, 255, 255);
   border-radius: 8px;
 }
-
 
 .conteudo {
   padding-left: 5%;

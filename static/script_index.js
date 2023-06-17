@@ -1,3 +1,4 @@
+//Efeito digitação para textos
 var txt1 = 'Confiança e credibilidade';
 var txt2 = 'O ITEN – Instituto Tecnológico de Ensaios Ltda. – é um laboratório nacional de ensaios independentes que realiza os mais variados tipos de serviços e atua nas áreas elétrica, magnética, eletrônica, física, mecânica, óptica, térmica, acústica e química.';
 var txt3 = 'Contamos com uma equipe de profissionais altamente qualificada e possuímos uma infraestrutura completa com diversas salas especiais para análises e ensaios e mais cinco salas para suporte e administração. Além disso, o principal objetivo da nossa empresa é fortalecer e proporcionar credibilidade aos produtos e serviços para os mais distintos segmentos do mercado.'
@@ -74,15 +75,3 @@ window.onload = function() {
     // Carrega o vídeo após alterar a fonte
     document.getElementById('background-video').load();
 };
-
-
-document.querySelector('.navbar-toggler').addEventListener('click', function () {
-    var navbar = document.querySelector('#sidebar');
-    navbar.classList.toggle('nav-solid');
-});
-
-
-
-
-
-

@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Laboratório ITEN</title>
+    <link rel="icon" href="static/logo_laranja.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/static/style_sidebar.css">
+    <link rel="stylesheet" href="/static/style_empresa.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<!-- Barra superior -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="sidebar">
+        <div class="container-fluid" id="container-fluid">
+            <a id="home" href="index.html">ITEN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="navbar-toggler-icon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="servicos.html">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Certificados</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="empresa.html">Empresa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="informacoes.html">Informações</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contato.html">Contato</a>
+                </li>
+                <form class="d-flex">
+                    <input class="form-control me-2 transparent-input" type="search" placeholder="O que você procura?" aria-label="Search" id="search">
+                    <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                </form>  
+            </ul>          
+            </div>
+        </div>
+    </nav>       
+    <!-- Empresa -->
+    <div class="conteudo">
+        <div class="card-container">
+            <div class="card" id="infoEmpresa">
+                <h2>Conheça nossa empresa</h2>
+                <p>Contamos com uma equipe de profissionais altamente qualificada e possuímos uma infraestrutura completa, com sete salas especiais para análise e ensaios, mais cinco salas para suporte e administração.</p>
+                <p>Além disso, o principal objetivo da nossa empresa é fortalecer e proporcionar credibilidade aos produtos e serviços para os distintos segmentos do mercado.</p>
+                <h2>Histórico</h2>
+                <p>O ITEN é uma empresa nacional, que iniciou sua operação em 2007, com o objetivo precípuo de fortalecer e proporcionar credibilidade aos produtos e serviços para os mais diversificados segmentos do mercado. Nossos colaboradores possuem longa experiência nas áreas de ensaios, normalização e sistema da qualidade, oriunda de laboratórios de ensaios e vivência em indústrias eletro-eletrônica, metalúrgica, mecânica, química e similares.</p>
+                <p>O ITEN possui uma infra-estrutura completa, estando instalado em diversas sala especiais para análise e ensaios e mais 5 salas destinadas a suporte e administração, perfazendo aproximadamente 1000 m², de modo a atender os mais variados tipos de serviços, tais como ensaios físicos, mecânicos, elétricos, magnéticos, ópticos, químicos e similares.</p>
+                <p>Tendo como objetivo a perenização e reconhecimento no mercado, o ITEN inicia suas atividades com um corpo técnico altamente capacitado, com formação acadêmica compatível com as atividades do laboratório, e principalmente com experiência de 25 anos em ensaios e em sistemas de gestão.</p>
+            </div>
+        <div class="container my-4">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-bullseye mr-2"></i> Missão</h5>
+                            <p class="card-text">Nossa missão é fornecer produtos e serviços de alta qualidade para atender às necessidades de nossos clientes e promover um ambiente de trabalho positivo para nossos funcionários.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-binoculars mr-2"></i> Visão</h5>
+                            <p class="card-text">Nossa visão é ser reconhecida como líder na indústria, excedendo as expectativas de nossos clientes e impulsionando o crescimento sustentável.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-hand-holding-heart mr-2"></i> Valores</h5>
+                            <p class="card-text">Nossos valores centrais incluem integridade, inovação, excelência, respeito, responsabilidade social e foco no cliente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <div class="rodape">
+        <footer class="footer">
+            <h5>ITEN - Instituto Técnologico De Ensaios Ltda</h5>
+            <p>Av. Victor Civita, 2064 - Santa Maria - Osasco/SP - CEP: 06149-225</p>
+            <p>comercial@itensp.com.br</p>
+            <p>comercial1@itensp.com.br</p>
+            <p>(11) 3606-7373</p>
+            <p>(11) 3431-4145</p>
+            <p class="text-footer">Copyright &copy; ITEN. (Lei 9610 de 19/02/1998).</p>
+        </footer>
+    </div>
+
+    <a href="https://wa.me/11945449450" class="whatsapp_float" target="_blank">
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+    </a> 
+
+    <!-- Modal - Certificados -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Certificados</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="static/certificado-acreditacao.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="static/anatel.png" class="d-block w-100" alt="...">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="/static/script_sidebar.js"></script>
+    <script src="/static/script_index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>

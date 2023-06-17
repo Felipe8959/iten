@@ -1,17 +1,17 @@
 body::after {
-    content: "";
-    background-image: url('https://mizoramsacs.org/wp-content/uploads/2019/06/background.jpg');
-    background-size:cover;
-    background-position: center;
-    filter: blur(60px);
-    opacity: 0.2;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;   
-  }
+  content: "";
+  background-image: url('https://mizoramsacs.org/wp-content/uploads/2019/06/background.jpg');
+  background-size:cover;
+  background-position: center;
+  filter: blur(60px);
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
 
   .logoIndex {
     display: block;
@@ -29,83 +29,88 @@ body::after {
     100% { transform: translateY(0); }
   }
   
-    .footer {
-      position: relative;
-      bottom: 0;
-      width: 100%;
-      padding: 20px 0;
-      background-color: transparent;
-      border-top: 1px solid #919191;
-    }
-    
-    .text-footer {
-      margin-bottom: 0;
-      color: #616161;
-      text-decoration: none;
-      font-size: 10px;
-    }
-    
-    .footer p {
-      font-size: 16px;
-      padding-left: 38px;
-      color: #808080;
-    }
-    
-    .footer h5 {
-      font-size: 20px;
-      padding-left: 38px;
-      color: #616161;
-    }
-    
-    .text-footer:hover {
-      color: #007bff;
-    }
+  .footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+    background-color: transparent;
+    border-top: 1px solid #919191;
+  }
   
-    h1 {
-      text-align: center;
-      padding-top: 80px;
-      padding-bottom: 30px;
-    }
+  .text-footer {
+    margin-bottom: 0;
+    color: #616161;
+    text-decoration: none;
+    font-size: 10px;
+  }
   
-    h2 {
-      padding-top: 50px;
-      padding-left: 30px;
-    }
+  .footer p {
+    font-size: 16px;
+    padding-left: 38px;
+    color: #808080;
+  }
   
-    h4 {
-      padding-bottom: 55px;
-      color: #007bff;
-    }
+  .footer h5 {
+    font-size: 20px;
+    padding-left: 38px;
+    color: #616161;
+  }
   
-    p {
-      font-size: 18px;
-      padding-left: 30px;
-    }
-  
-    .card {
-      flex: 0 1 calc(50% - 20px);
-      border-radius: 10px;
-      border: none;
-      background-color: rgba(255, 255, 255, 0.5);
-      margin: 10px;
-      padding: 20px;
-      box-shadow: 0px 10px 20px rgba(126, 126, 126, 0.05), 0px 6px 6px rgba(122, 122, 122, 0.05);
-      transition: all 0.1s ease-in-out;
-    }
+  .text-footer:hover {
+    color: #007bff;
+  }
 
-    .card:hover {
-      transform: scale(0.95);
-      box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
-      cursor: pointer;
-    }
+  h1 {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
 
-    .card-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      margin-top: 50px;
-    }
-      
+  h2 {
+    padding-top: 50px;
+    padding-left: 30px;
+  }
+
+  h4 {
+    padding-bottom: 55px;
+    color: #007bff;
+  }
+
+  p {
+    font-size: 18px;
+    padding-left: 30px;
+  }
+
+  .card {
+    flex: 0 1 calc(50% - 20px);
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0px 10px 20px rgba(126, 126, 126, 0.05), 0px 6px 6px rgba(122, 122, 122, 0.05);
+    transition: all 0.1s ease-in-out;
+  }
+
+  .card:hover {
+    transform: scale(0.95);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+
+  .nav-link:active,
+  .nav-link:focus {
+    color: #616161 !important;
+}
+    
     
 @media screen and (max-width: 800px) {
   .card {
@@ -145,26 +150,8 @@ body::after {
     font-size: 4vw;
   }
 
-  .navbar-collapse.collapse.show .nav-link {
-    color: #fff;
-  }
-  
-  .navbar, .bg-body-tertiary {
-    background-color: rgba(27, 27, 27, 0.98) !important;
-  }
-  
-  .navbar-toggler:focus, .navbar-toggler:active {
-    outline: none;
-    border: none;
-    box-shadow: none;
-  }
-  
-  .navbar-toggler {
-    border: none;
-  }
-  
-  .navbar-toggler-icon {
-    filter: invert(100%);
+  .nav-solid {
+    background-color: rgba(27, 27, 27, 0.98) !important; /* Altere para a cor desejada */
   }
 
 }

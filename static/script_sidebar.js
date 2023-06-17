@@ -10,6 +10,7 @@ window.onscroll = function() {
     }
 }
 
+
 //Filtragem de busca:
   document.querySelector('form').addEventListener('submit', function(e) {
     e.preventDefault();
@@ -21,6 +22,7 @@ window.onscroll = function() {
 function removeAccents(str) {
     return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 }
+
 
 $(document).ready(function(){
     let searchParams = new URLSearchParams(window.location.search);
@@ -41,3 +43,8 @@ $(document).ready(function(){
 });
 
 
+// Ao clicar no menu, a barra fica sólida
+document.querySelector('.navbar-toggler').addEventListener('click', function () {
+    var navbar = document.querySelector('#sidebar');
+    navbar.classList.toggle('nav-solid');
+});
