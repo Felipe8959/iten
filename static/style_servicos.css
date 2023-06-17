@@ -150,8 +150,4 @@ body::after {
     font-size: 4vw;
   }
 
-  .nav-solid {
-    background-color: rgba(27, 27, 27, 0.98) !important; /* Altere para a cor desejada */
-  }
-
 }

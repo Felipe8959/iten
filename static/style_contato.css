@@ -1,5 +1,16 @@
-body {
-background-color: #ffffff;
+body::after {
+  content: "";
+  background: radial-gradient(circle, #96abff, #96a9ff, #ffdc90);
+  background-size:cover;
+  background-position: center;
+  filter: blur(60px);
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
 }
 
   .footer {
@@ -36,6 +47,7 @@ background-color: #ffffff;
 
   h2 {
     padding-top: 50px;
+    color: #3b3b3b;
   }
 
   h4 {
@@ -47,7 +59,7 @@ background-color: #ffffff;
     flex: 0 1 calc(50% - 20px);
     border-radius: 10px;
     border: none;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 1);
     margin: 10px;
     margin-bottom: 40px;
     padding: 20px;
@@ -57,6 +69,11 @@ background-color: #ffffff;
   iframe {
     padding-bottom: 50px;
   }
+
+  .nav-link:active,
+  .nav-link:focus {
+    color: #616161 !important;
+}
 
   @media screen and (max-width: 800px) {  
     .card-container h5{
