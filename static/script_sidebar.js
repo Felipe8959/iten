@@ -10,60 +10,37 @@ window.onscroll = function() {
     }
 }
 
+
+//Filtragem de busca:
+  document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    let searchValue = document.querySelector('#search').value;
+    window.location.href = 'servicos.html?search=' + encodeURIComponent(searchValue);
+  });
+
+function removeAccents(str) {
+    return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+}
+
+
 $(document).ready(function(){
-    $(".d-flex").on('submit',function(event) {
-        event.preventDefault(); // Evita o recarregamento da página
-
-        var query = $('#search').val(); // Captura o valor do campo de pesquisa
-
-        // Redireciona para a rota '/servicos' com a consulta de pesquisa como um parâmetro de URL
-        window.location.href = '/servicos?query=' + encodeURIComponent(query);
-    });
-});
-
-
-
-$(document).ready(function() {
-    // Obtém a consulta de pesquisa do URL
-    var urlParams = new URLSearchParams(window.location.search);
-    var query = urlParams.get('query');
-
-    // Se houver uma consulta de pesquisa, realiza a busca
-    if(query !== null) {
-        $.get("/buscar", {query: query}, function(data) {
-            console.log(data);
-
-            // Adiciona cabeçalho de texto "Resultado para 'busca'"
-            $("#search-results").empty().append($("<h2>").text("Resultados para " + query + " em nosso escopo:"));
-
-            // Cria a tabela e adiciona cabeçalhos de coluna
-            var table = $("<table>").addClass("table");
-            var thead = $("<thead>");
-            var headerRow = $("<tr>");
-            headerRow.append($("<th>").text("Produto"));
-            headerRow.append($("<th>").text("Ensaio"));
-            headerRow.append($("<th>").text("Norma"));
-            thead.append(headerRow);
-            table.append(thead);
-
-            // Adiciona os dados a tabela
-            var tbody = $("<tbody>");
-            for(var i = 0; i < data.length; i++) {
-                var row = $("<tr>");
-                row.append($("<td>").text(data[i].produto));
-                row.append($("<td>").text(data[i].ensaio));
-                row.append($("<td>").text(data[i].norma));
-                tbody.append(row);
+    let searchParams = new URLSearchParams(window.location.search);
+    let query = searchParams.get('search');
+    if (query) {
+        query = query.toLowerCase();
+        query = removeAccents(query);
+        query = query.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+        $('.card').each(function(){
+            let cardText = $(this).text().toLowerCase();
+            cardText = removeAccents(cardText);
+            cardText = cardText.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+            if (!cardText.includes(query)){
+                $(this).hide();
             }
-            table.append(tbody);
-
-            // Insere a tabela no contêiner de resultados de pesquisa
-            $("#search-results").append(table);
         });
     }
 });
-
-
 
 
 // Ao clicar no menu, a barra fica sólida
